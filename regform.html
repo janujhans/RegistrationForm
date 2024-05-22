@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+   <style>
+body {
+         font-family: monospace,verdana;
+         color:ghostwhite;
+         background-image:linear-gradient(to bottom right,grey,ghostwhite); 
+         border:2px solid ghostwhite;
+        border-radius:10px;
+         box-shadow:0 20px 50px rgb(10,10,10,0.6);
+         padding:400px;
+      }
+marquee{
+         font-family:cursive;
+         color: white;
+         font-size:24px;
+       }
+#grid{
+      height:800%;
+      color:grey;
+      box-shadow:0 10px 20px;
+      border-radius:80px;
+      padding: 18px;
+      margin: 0 auto;
+     border: 5px solid #f0e6ff;
+    }
+    #registration-form
+    {
+      max-width:500px;
+      margin: 0 auto;
+      background-color:rgba(65,72,74);
+      padding: 18px;
+      border-radius: 10px;
+      box-shadow: 0 0px 10px rgb(0,0,0,1.9);
+     border:2px solid ghostwhite;
+    }
+      .form-group{
+        margin-bottom: 2px;
+        margin-left: 45px;
+        margin-right: 45px;
+        margin-top: 7px;
+        padding:5px;
+        box-sizing: border-box;
+        font-family:cursive;
+        max-width: 800px;
+        background-color:rgba(65,72,74);
+        border-radius:20px;
+      }
+    input[type=text], input[type=password],input[type=email],input[type=number] {
+        width: 90%;
+         padding: 12px;
+         margin: 5px 0 12px 0;
+         border:2px solid pink;
+         background-color:florawhite;
+         border-radius:10px;
+         opacity:0.4;
+        display:inline-block;
+      }
+  select{
+         width: 100%;
+         padding: 12px;
+         margin: 5px 0 12px 0;
+         border:2px solid pink;
+         background-color:florawhite;
+         border-radius:10px;
+         opacity:0.4;
+        display:inline-block;
+      }
+     select:focus, input[type=text]:focus, input[type=password]:focus,input[type=number]:focus,input[type=email]:focus {
+         background-color:lightblue ;
+         opacity:0.6;
+         border:2px solid white;
+      }
+
+    .form-container{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+       padding: 16px;
+       max-width: 800px;
+
+    }
+    .submit {
+  background-image:linear-gradient(to left,grey,ghostwhite) ;
+ opacity:0.6;
+  color: white;
+ font-size:18px;
+  padding: 16px 20px;
+  margin: 8px 10px;
+  border: 3px solid ghostwhite;
+  cursor: pointer;
+  width: 80%;
+  opacity: 0.9;
+  transition:background-color 0.3s;
+ border-radius:20px ;
+  box-shadow:0 2px 10px;
+  display:outline-block;
+}
+.submit:hover {
+  background-image:linear-gradient(to bottom right,hotpink,grey) ;
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+    <div class="form-container">
+        <form id="registration-form">
+          <div id="grid">
+            <marquee width="100%"height="70" direction="left" >Online Course<br>Registration Form</marquee>
+          </div><br><br>
+            <div class="form-group">
+                <label for="Firstname">First Name</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name"required>
+            </div>
+              <div class="form-group">
+                <label for="lastname">Last Name</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name"required>
+            </div>
+          
+             <div class="form-group">
+                <label for="gender">Gender</label>
+                <input type="radio" id="gender" name="gender" required>Male
+               <input type="radio" id="gender" name="gender" required>Female
+               <input type="radio" id="gender" name="gender" required>Others
+            </div>
+            <div class="form-group">
+                <label for="phonenumber">Contact Number</label><br>
+                <input type="number" id="phonenumber" name="phonenumber" placeholder="enter your phone number"required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email"required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password"placeholder="Enter correct password" required>
+            </div>
+            <div class="form-group">
+                <label for="qualification">Field of Study</label>
+                <select name="qualification" id="qualification" required>
+                  <option value="choose">Please choose </option>
+                  <option value="diploma">Diploma</option>
+                  <option value="btech">Bachelor of Technology</option>
+                  <option value="mtech">Master of Technology</option>
+                  <option value="mba">Master of Business</option>
+                  <option value="phd">Doctor of Philosphy</option>
+                </select>
+            </div>
+            <div class="form-group">
+            <label for="year" id="year">Year of study</label>
+                  <select name="year" id="year">
+                    <option value="choose ">please select</option>
+                    <option value="fyear">1st Year</option>
+                    <option value="syear">2nd Year</option>
+                    <option value="tyear">3rd Year</option>
+                    <option value="fyear">4th year</option>
+                  </select></div>
+             <div class="form-group">
+                <label for="degre">Degree attained(%)</label><br>
+                <input type="number" id="degree" name="degree"placeholder="enter your degree percentage"required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label><br>
+                <input type="text" id="country" name="country" placeholder="eg.,India" required>
+            </div>
+            <div class="form-group">
+              <label for="period" id="period">Course period</label>
+              <select name="year" id="year">
+                <option value=" ">please select</option>
+                <option value="1month">1 Month</option>
+                <option value="2month">2 Months</option>
+                <option value="3month">3 Months</option>
+                <option value="6month">6 Months</option>
+              </select>
+            </div><br>
+            <div class="form-group"><pre>  <button type="submit" class="submit">Register</button> 
+             </pre>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
